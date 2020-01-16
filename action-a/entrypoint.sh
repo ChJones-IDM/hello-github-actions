@@ -1,3 +1,5 @@
 #!/bin/sh -l
 
-sh -c "echo Hello world my name is $MY_NAME"
+sh -c "python3.6 --version"
+
+sh -c "pip3.6 freeze"
