@@ -11,7 +11,7 @@ jobs:
       env:
         MY_NAME: "Mona"
     - name: Upload requirements.txt
-      uses: actions/upload-=artifact@v1
+      uses: actions/upload-artifact@v1
       with:
         name: requirements.txt
         path: /requirements.txt
