@@ -10,3 +10,7 @@ jobs:
     - uses: ./action-a
       env:
         MY_NAME: "Mona"
+    - name: Upload requirements.txt
+      uses: actions/upload-=artifact@v1
+        name: requirements.txt
+        path: /requirements.txt
