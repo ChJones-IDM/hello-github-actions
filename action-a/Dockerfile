@@ -1,4 +1,6 @@
 FROM debian:9.5-slim
+ENV SIMTYPE Generic
+
 
 LABEL "com.github.actions.name"="Hello World"
 LABEL "com.github.actions.description"="Write arguments to the standard output"
@@ -11,4 +13,4 @@ LABEL "maintainer"="Octocat <octocat@github.com>"
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh", "$SIMTYPE"]
