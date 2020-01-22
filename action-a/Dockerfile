@@ -1,5 +1,5 @@
 FROM debian:9.5-slim
-ENV SIMTYPE Generic
+ENV SIMTYPE=Generic
 
 LABEL "com.github.actions.name"="Hello World"
 LABEL "com.github.actions.description"="Write arguments to the standard output"
