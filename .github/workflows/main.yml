@@ -11,6 +11,7 @@ jobs:
       uses: actions/checkout@master
       with:
         repository: InstituteforDiseaseModeling/dtk-tools
+        ssh-key: ${{ secrets.ssh_key }}
         path: dtk-tools
     - name: dtk-tools dir
       working-directory: ./dtk-tools
