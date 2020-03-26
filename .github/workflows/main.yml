@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: ./action-a
-      env:
-        MY_NAME: "Mona"
+    - name: Checkout dtk-tools
+      uses: actions/checkout@master
+      with:
+        repository: InstituteforDiseaseModeling/dtk-tools
+        ssh-key: ${{ secrets.idm_bamboo_ssh }} # `GitHub_PAT` is a secret that contains your PAT
+        path: dtk-tools
